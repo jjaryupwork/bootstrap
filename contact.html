@@ -12,17 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
-    <!--Include JQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap JavaScript -->
-        <script src="js/bootstrap.js"></script>
-    <script>
-            $(document).ready(function() {
-                $('#address').popover('animation')
-            });
-        </script>
   </head>
+
 <!-- NAVBAR
 ================================================== -->
    <body>  
@@ -37,7 +28,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="images/leftlogo.png" alt="Runners society"></a>
+      <a class="navbar-brand"><img src="images/leftlogo.png" alt="Runners society"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,9 +46,9 @@
       <li><a href="#contact" class="current">Contact</a></li>
                 </ul>
       <ul class="nav navbar-nav navbar-right">
-           <li class="login" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+        <li class="login" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
         <li class="register" data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
-        <li> <img src="images/rightlogo.png" alt="Runners society"/></li>
+        <a class="navbar-brand"><img src="images/rightlogo.png" alt="Runners society"/></a>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -135,7 +126,7 @@
     </div>
   </div>
 </div>
-    <!-- Carousel
+    <!-- Carousel 
     ================================================== -->
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -190,10 +181,8 @@
             <div class="row pad-top-30">
                 <div class="inner-page col-md-8">
                     <div id="contact" class="well">
-                        <iframe class="gmap"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0986071656375!2d21.007403415796393!3d52.223426279759096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccec37313d65%3A0x33abebb89b1e8bc2!2sWilcza+65%2C+Warszawa!5e0!3m2!1spl!2spl!4v1502306624335"></iframe><br/>
-                        <br><br>
+                        <iframe class="gmap"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0986071656375!2d21.007403415796393!3d52.223426279759096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccec37313d65%3A0x33abebb89b1e8bc2!2sWilcza+65%2C+Warszawa!5e0!3m2!1spl!2spl!4v1502306624335"></iframe>
                         <button id="address" class="btn btn-lg btn-primary" data-toggle="popover" title="Address" data-content="ul.Wilcza 65, Warszawa">Get Address</button>
-                        <br><br>
                         <h3>Contact Us</h3>
                         <p>Please use the form below to contact us</p>
                         <form>
@@ -227,6 +216,33 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#address').popover('animation')
+    });
+  </script>
+
+  
   </body>
 </html>
+
+
+<!--
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>
+    window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#address').popover('animation')
+    });
+  </script>
+
+
+  -->
