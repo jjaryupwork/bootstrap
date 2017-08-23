@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+    <title>Runners Society</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+   <body>  
+        <nav class="navbar navbar-default navbar-fixed-top">
+        
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/leftlogo.png" alt="Runners society"></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+             <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#newsflash">News</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workout <span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                    <li><a href="workout.html#news1">Workout</a></li>
+                    <li><a href="workout.html#news2">Exercise</a></li>
+                    <li><a href="workout.html#news3">Goal</a></li>
+                  </ul>
+                </li>
+      <li><a href="contact.html">Contact</a></li>
+                </ul>
+      <ul class="nav navbar-nav navbar-right">
+           <li class="login" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+        <li class="register" data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
+        <li> <img src="images/rightlogo.png" alt="Runners society"/></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Login form</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div> 
+</form>
+      </div>
+      <div class="modal-footer">
+        
+      <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Register Modal -->
+<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content" id="regModalLabel">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" >Register</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+         <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="email" class="form-control" placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control"  placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control"  placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control"  placeholder="Confirm Password">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">   
+      <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Sign up</button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Carousel
+    ================================================== -->
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="./images/runner3.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>When I was younger, I always wanted to impress, to be good for my country, to make them feel good, and sometimes that meant I didn't focus on myself enough. I learned I had to put myself first. And it's fine because I want for me the same thing that they want for me, which is to win.</p>
+              <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#regModal" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="./images/runner2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>Don't dream of winning, train for it!" — Mo Farah, Olympic long-distance runner</p>
+              <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="./images/runner1.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>"What seems hard now will one day be your warm-up."</p>
+              <p><a class="btn btn-lg btn-primary" href="workout.html" role="button">Exercise</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" >
+    <h1>Workout</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra lorem et gravida pellentesque. Etiam venenatis nibh vel ultrices finibus. Morbi quis tempus odio, in pellentesque risus. Curabitur vulputate elementum imperdiet. Ut commodo diam nec enim bibendum, vel efficitur nulla porttitor. Suspendisse nec lacus dui. Nam convallis urna eget ex facilisis, ac egestas tortor venenatis.</p>
+    
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" >
+
+      <div class="row featurette" id="news1">
+        <div class="col-md-7">
+          <h2 class="featurette-heading " >Workout <span class="text-muted">every day rutine.</span></h2>
+          <p class="lead">Quisque aliquet velit vel nunc lobortis, ac tincidunt turpis varius. Fusce molestie vehicula neque vel rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi imperdiet, nisl eget posuere eleifend, ipsum quam dictum justo, non elementum leo felis at urna. Nam pretium libero id finibus posuere. Aenean suscipit, leo in mattis vestibulum, quam tortor facilisis ex, sit amet rutrum lectus velit eu ante. Integer at ipsum quis metus tincidunt laoreet eget quis nisi. Maecenas porta massa in erat pretium varius. Maecenas gravida viverra enim, ac efficitur ante auctor id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam luctus mollis lorem.</p>
+          <a href="#">Back to top</a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="./images/workout1.jpg" alt="Generic placeholder image">
+          <p class="pull-right">
+        </div>
+       
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="news2">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading " >Exercise <span class="text-muted"> for healty life.</span></h2>
+          <p class="lead">Aliquam id dictum lacus. Aliquam in mattis massa. Mauris rutrum nisi blandit facilisis ornare. Suspendisse vitae interdum dolor. Integer vel risus vitae ipsum dapibus dignissim. Quisque eu condimentum augue. Integer sagittis laoreet justo et ultrices. Suspendisse diam nunc, suscipit nec mattis non, suscipit et erat. Nullam condimentum justo euismod, fringilla neque ac, auctor est. Nunc ultrices magna sit amet eros venenatis, nec ullamcorper dolor tincidunt. Praesent viverra ullamcorper odio ut condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent congue arcu ut mi varius, vitae varius magna rutrum.</p>
+          <a href="#">Back to top</a>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="./images/workout2.jpg" alt="Generic placeholder image">
+        </div>
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="news3">
+        <div class="col-md-7">
+          <h2 class="featurette-heading" > Goal <span class="text-muted">set up high.</span></h2>
+          <p class="lead">Nullam condimentum orci a condimentum porttitor. Sed tristique blandit ligula eu imperdiet. Nunc nulla nisi, pulvinar quis est dapibus, elementum maximus mauris. Vestibulum at laoreet eros. Nullam fermentum in libero in varius. Quisque suscipit ornare pretium. Mauris et lectus in quam aliquam ornare. Praesent sit amet nibh et tortor lobortis efficitur id in enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in sapien leo. Suspendisse ac dapibus nibh. Integer sed faucibus erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat.</p>
+          <a href="#">Back to top</a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="./images/workout3.jpg" alt="Generic placeholder image">
+          <p class="pull-right">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Jaroslaw Jary</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
