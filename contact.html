@@ -214,7 +214,7 @@
 
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+    ==================================================$('#address').popover({      animation: false   }, {   placement: 'left' }) -->
     <!-- Placed at the end of the document so the pages load faster -->
 
   
@@ -222,13 +222,9 @@
    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
    <script src="./js/bootstrap.min.js"></script>
    <script>
-    $(document).ready(function() {
-        $('#address').popover({
-            animation: false
-        }, {
-            placement: 'left'
-        })
-    });
+    
+        $('#address').popover()={animation: false, placement: 'right'};
+    
    </script>
 
   
